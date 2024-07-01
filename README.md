@@ -1,5 +1,7 @@
 # Binary Search Number Guessing Game
 
+[Play the Game](https://binary-search-number-guessing-game.netlify.app/)
+
 Welcome to the Binary Search Number Guessing Game! This interactive game challenges you to guess a number chosen by the computer using the power of binary search. It's a fun and educational way to understand how binary search works!
 
 ## How to Play
@@ -15,6 +17,8 @@ Welcome to the Binary Search Number Guessing Game! This interactive game challen
 5. **Exact Guesses:** You will have exactly \(\log_2(N)\) guesses to find the computer's number, where \(N\) is the size of the range you provided. For instance, if your range is from 1 to 100, you will have \(\log_2(100) \approx 7\) guesses.
 
 6. **Win or Lose:** If you guess the number within the allotted guesses, you win! If not, the game reveals the number, and you can try again.
+
+[Play the Game](https://binary-search-number-guessing-game.netlify.app/)
 
 ## Features
 
