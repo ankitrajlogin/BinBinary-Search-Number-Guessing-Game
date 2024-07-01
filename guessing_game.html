@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="main">
+        <div id="contain">
+            <h1 id="heading">Number Gussing Name</h1>
+            
+            <div class="description">A guessing game that teaches binary search by challenging users to find a hidden number within a given range.</div>
+
+            <div id="range">
+                Enter range : <span><input type="number" id="range-start" placeholder="Starting-Value"></span> to <span><input type="number" id="range-end" placeholder="Ending-value"></span>
+            </div>
+
+            <div id="game-start">
+                <div id="start-div"><button id="start">Start Game</button>
+                <div class="info-container">
+                    <span class="info-icon">i</span>
+                    <span class="tooltip">First Enter Starting value and then Ending value. Then , you can start the game. And Starting guessing the number between that two value.</span>
+                </div>
+            </div>
+            <div id="restart-div">
+                <div class="info-container">
+                    <span class="info-icon">i</span>
+                    <span class="tooltip">When You Enter on Restart , Game restart with the same range with new Number to Find</span>
+                </div>
+                <button id="restart">Restart</button>
+                
+                </div>
+            </div>
+
+            <div id="guess-heading">First Enter the Range of Number</div>
+            <div id="input-div"><input type="number" id="input"></div>
+            <div id="submit-div"><button id="submit-button">Submit</button></div>
+            <div id="accuracy-check">Here, We show your accuracy</div>
+            <div id="previous-guesses-div">
+                Previous Guesses : <span id="previous_value"></span>
+            </div>
+            <div id="guess-remain-div" >Guesses Remaing : <span id="guesses-remaining">Not Availabe</span></div>
+
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
