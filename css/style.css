@@ -1,0 +1,166 @@
+*{
+    padding : 0 ; 
+    margin : 0 ; 
+    box-sizing : border-box ; 
+}
+
+body{
+    font-family: Arial , sans-serif;
+    background-color: #f4f4f4; 
+    background-color: rgb(236, 238, 199);
+    
+}
+
+#main{
+    /* margin : 1em ; */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+#contain{
+    display: flex ; 
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(152, 243, 121);
+    width: 40%;
+}
+
+#heading{
+    text-align: center;
+    background-color: rgb(221, 201, 121);
+    border-radius: 5px;
+    margin : 0.3em ; 
+}
+
+.description{
+    text-align: center;
+    margin : 0.3em 3em 1em 3em ;
+     
+}
+
+#range{
+    display: flex;
+    justify-content: center;
+    margin : 0.3em 3em 1em 3em ;
+}
+
+
+
+#range-start{
+    width: 8em;
+    margin: 0.1em 1em 0.1em 1em;
+}
+
+#range-end{
+    width: 8em;
+    margin: 0.1em 1em 0.1em 1em;
+}
+
+#game-start{
+    display: flex;
+    justify-content: space-between;
+    margin : 0.5em 3em 0.5em 3em ; 
+}
+
+.info-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.info-icon {
+    background-color: #e0e8df;
+    margin-left: 0.5em;
+    color: rgb(21, 12, 12);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #87e789;
+    color: #151212;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the icon */
+    left: 50%;
+    margin-left: -100px; /* Use half of the width to center-align */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4dfc08 transparent transparent transparent;
+}
+
+.info-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+button{
+    border-radius: 3px;
+    padding: 3px;
+    text-align: center;
+    background-color: rgb(97, 169, 109);
+}
+
+#guess-heading{
+    text-align: center;
+    margin : 0.5em 3em 0.5em 3em ; 
+    
+    
+}
+
+#input-div{
+    text-align: center;
+    margin : 0.5em 3em 0.5em 3em ; 
+}
+
+#submit-div{
+    text-align : center ; 
+    margin : 0.1em 3em 0.1em 3em ; 
+}
+
+#accuracy-check{
+    text-align : center ; 
+    margin : 0.1em 3em 0.1em 3em ; 
+}
+
+#previous-guesses-div{
+    margin-left: 3em;
+    margin : 2em 3em 0.1em 3em ; 
+}
+
+#guess-remain-div{
+    margin : 0.1em 0em 2em 3em ; 
+}
+
+@media(max-width : 768px){
+    #contain{
+        width: 97%; 
+    }
+
+    #range{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
