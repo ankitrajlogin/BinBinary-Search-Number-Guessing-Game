@@ -1,4 +1,5 @@
-Binary Search Number Guessing Game
+#Binary Search Number Guessing Game
+link :- https://binary-search-number-guessing-game.netlify.app/
 Description
 Welcome to the Binary Search Number Guessing Game! This interactive game challenges you to guess a number chosen by the computer using the power of binary search. It's a fun and educational way to understand how binary search works!
 
